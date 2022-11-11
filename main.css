@@ -1,0 +1,112 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("https://exoplanets.nasa.gov/assets/stars6.jpg");
+    font: 700 1em "News Cycle", sans-serif;
+    letter-spacing: 0.15em;
+    color: #ff6;
+  }
+  
+  .intro {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 55vh;
+    margin: -100px auto 0 auto;
+    font-size: 200%;
+    font-weight: 400;
+    color: #4bd5ee;
+    opacity: 0;
+    animation: intro 7s ease-out 1s;
+  }
+  
+  .logo {
+    width: 700px;
+    height: 420px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin: -250px 0 0 -350px;
+    opacity: 0;
+    animation: logo 12.5s linear 10s;
+  }
+  .logo svg {
+    width: inherit;
+    margin: 0 auto;
+  }
+  
+  .prologue {
+    width: 900px;
+    height: 3400px;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    bottom: 0;
+    margin-left: -450px;
+    text-align: justify;
+    font-size: 4.0em;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    transform: perspective(300px) rotateX(25deg);
+  }
+
+  .prologue .title {
+    font-size: 100%;
+    text-align: center;
+  }
+
+  .prologue .text {
+    position: absolute;
+    top: 100%;
+    animation: prologue 70s linear 22s;
+  }
+  .prologue .text p {
+    margin: 1.35em 0 1.85em 0;
+    line-height: 1.15em;
+    backface-visibility: hidden;
+  }
+  
+  @keyframes intro {
+    0%, 100% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+  }
+  @keyframes logo {
+    0% {
+      transform: scale(2.7);
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.1);
+    }
+  }
+  @keyframes prologue {
+    0% {
+      top: 100%;
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      top: 0%;
+      opacity: 0;
+    }
+  }
+  @keyframes thanks {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
